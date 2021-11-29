@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Nav, NavLink, ProgressBar, Row } from 'react-bootstrap';
 import '../Header/Header.css'
 import profile from '../../images/profile.png'
+import pdf from '../../upload/MoyenulIslam.pdf'
 
 const About = () => {
     return (
@@ -64,7 +65,7 @@ const About = () => {
                                     <a className='p-2 text-dark' href="https://www.linkedin.com/in/moyen-islam-675204211/" target='blank'><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
-                            <button className='button-resume'>DOWNLOAD MY RESUME</button>
+                            <button className='button-resume'><a style={{ textDecoration: 'none' }} href={pdf} download>DOWNLOAD MY RESUME</a></button>
                         </Card.Body>
 
                     </Col>

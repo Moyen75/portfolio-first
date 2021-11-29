@@ -8,6 +8,10 @@ import Project3 from './components/Projects/Project3/Project3';
 import Project4 from './components/Projects/Project4/Project4';
 import Project5 from './components/Projects/Project5/Project5';
 import Project6 from './components/Projects/Project6/Project6';
+import About from './components/About/About';
+import Services from './components/Services/Services';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -44,6 +48,22 @@ function App() {
           </Route>
           <Route exact path='/project6' element={
             <Project6></Project6>}
+          >
+          </Route>
+          <Route exact path='/about' element={
+            <About></About>}
+          >
+          </Route>
+          <Route exact path='/services' element={
+            <Services></Services>}
+          >
+          </Route>
+          <Route exact path='/contact' element={
+            <Contact></Contact>}
+          >
+          </Route>
+          <Route exact path='/projects' element={
+            <Portfolio></Portfolio>}
           >
           </Route>
         </Routes>

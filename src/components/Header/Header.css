@@ -86,9 +86,12 @@
     color: #14ABF4 ;
     transition: background-color 0.5s ease-in, color 0.5s ease-in;
   }
-  .button-resume:hover{
+  .button-resume:hover {
     background-color:#14ABF4 ;
     color: white ;
+  }
+  .button-resume:hover a{
+      color: white;
   }
   .about-image{
       border-radius: 50%;
