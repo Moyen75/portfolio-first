@@ -12,7 +12,7 @@ import logo6 from '../../images/projects/main/laughing-almeida-093716.netlify.ap
 const Portfolio = () => {
     return (
         <div className='projects'>
-            <Container>
+            <Container className='service-cont'>
                 <div>
                     <div className='my-projects'>
                         <h1>MY PROJECTS</h1>

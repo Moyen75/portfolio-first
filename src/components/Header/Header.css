@@ -1,6 +1,9 @@
 .nav{
     background-color: #14ABF4;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .nav a{
     
@@ -30,7 +33,6 @@
 
 /* featured */
   .top-banner{
-      
       background-color: #14ABF4;
   }
   .main-banner{
@@ -40,6 +42,30 @@
       justify-content: center;
       color: white;
       margin-bottom: 0;
+      
+  }
+  .main-banner .main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .main-banner h4{
+      width: 0ch;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      animation: text 10s steps(41) infinite alternate;
+  }
+  @keyframes text{
+      0%{
+          width: 0ch;
+          
+      }
+      50%{
+          width: 40ch;
+          color: rgb(255, 213, 74);
+      }
       
   }
   .main-banner p{
@@ -98,6 +124,15 @@
       background-color: #14ABF4;
       margin-top: 10%;
   }
+  .projects{
+    background-color: rgba(238, 235, 235, 0.733);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .service-cont{
+      background-color: white;
+      padding-top: 10px;
+  }
   .services .icon{
       font-size: 30px;
       border: 2px solid #14ABF4;
@@ -113,6 +148,7 @@
   }
 .project{
     border: none;
+    transition: opacity 0.5s;
 }
 .project a{
     color: white;
@@ -122,7 +158,7 @@
     transition: margin-top 5s ;
 }
 .project:hover{
-    opacity: 0.5; 
+    opacity: 0.4; 
 }
 .project:hover + .new{
     display: flex;
@@ -141,3 +177,34 @@
     padding: 30px;
     font-size: 50px;
 }
+.footer{
+    background-color: black;
+    opacity: 0.9;
+    padding: 20px 10px;
+    color: white;
+}
+.footer .footer-icon .icon{
+    padding: 10px;
+    font-size: 40px;
+    color: #14ABF4;
+    transition: transform 0.5s;
+}
+.footer .footer-icon .icon:hover{
+    transform: scale(1.5);
+}
+.team-button{
+    background-color: #14ABF4;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.member{
+    transition: transform 0.5s;
+}
+.member:hover{
+      transform: scale(0.8);
+}
+
+

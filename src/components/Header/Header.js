@@ -6,7 +6,7 @@ import pdf from '../../upload/MoyenulIslam.pdf'
 const Header = () => {
     return (
         <div className='mb-5'>
-            <Navbar collapseOnSelect expand="lg" className='nav' variant="dark" fixed="top">
+            <Navbar collapseOnSelect expand="lg" className='nav' variant="dark" sticky="top">
                 <Container>
                     <Navbar.Brand>Moyenul Islam</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav flex-end " />
