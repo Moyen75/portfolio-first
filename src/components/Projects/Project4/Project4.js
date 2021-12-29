@@ -5,8 +5,8 @@ import img2 from '../../../images/projects/doctors-portal-37851.web.app_(iPad).p
 const Project4 = () => {
     return (
         <div>
-            <img style={{ width: '25%'}} src={img} alt="" />
-            <img style={{ width: '8%' }} src={img2} alt="" />
+            <img style={{ width: '25%',margin:'0 10px'}} src={img} alt="" />
+            <img style={{ width: '8%',margin:'0 10px' }} src={img2} alt="" />
             <div>
                 <h2>Doctors Portal</h2>
                 <span><a style={{ textDecoration: 'none' }} target='blank' href="https://doctors-portal-37851.web.app/">Live site</a></span> ||

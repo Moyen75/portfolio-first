@@ -5,8 +5,8 @@ import img2 from '../../../images/projects/assignment-10-e5779.web.app_(iPhone X
 const Project1 = () => {
     return (
         <div>
-            <img style={{ width: '25%'}} src={img} alt="" />
-            <img style={{ width: '8%'}} src={img2} alt="" />
+            <img style={{ width: '25%', margin: '0 10px' }} src={img} alt="" />
+            <img style={{ width: '8%', margin: '0 10px' }} src={img2} alt="" />
             <div>
                 <h2>Doctor's Dental Care</h2>
                 <span><a style={{ textDecoration: 'none' }} target='blank' href="https://assignment-10-e5779.web.app/">Live site</a></span> ||

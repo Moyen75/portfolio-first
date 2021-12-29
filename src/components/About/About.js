@@ -31,7 +31,7 @@ const About = () => {
                             </div>
                             <div>
                                 <h3 className='text-start'>CSS</h3>
-                                <ProgressBar now={70} label={"70%"} />
+                                <ProgressBar now={80} label={"80%"} />
                             </div>
                             <div>
                                 <h3 className='text-start'>Javascript</h3>
@@ -39,7 +39,7 @@ const About = () => {
                             </div>
                             <div>
                                 <h3 className='text-start'>React</h3>
-                                <ProgressBar now={80} label={"80%"} />
+                                <ProgressBar now={85} label={"85%"} />
                             </div>
                             <div>
                                 <h3 className='text-start'>Node.js</h3>
@@ -55,7 +55,7 @@ const About = () => {
                             </div>
                             <div>
                                 <h3 className='text-start'>Material UI</h3>
-                                <ProgressBar now={70} label={"70%"} />
+                                <ProgressBar now={80} label={"80%"} />
                             </div>
                             <div>
                                 <h4 className='text-start mt-1'>Social</h4>

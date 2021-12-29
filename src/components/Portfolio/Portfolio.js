@@ -7,6 +7,7 @@ import logo3 from '../../images/projects/main/assignment-12-782e1.web.app_(iPad 
 import logo4 from '../../images/projects/main/doctors-portal-37851.web.app_(iPad Pro).png'
 import logo5 from '../../images/projects/main/gifted-spence-60c3e3.netlify.app_(Nest Hub).png'
 import logo6 from '../../images/projects/main/laughing-almeida-093716.netlify.app_(iPad Pro).png'
+import '../../Style/Style.css'
 
 
 const Portfolio = () => {
@@ -19,42 +20,28 @@ const Portfolio = () => {
                         <hr style={{ width: '50%', margin: '0 auto' }} />
                     </div>
                     <Row xs={1} md={3} className="g-4">
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo} />
-                                <a href="/project1" className='stretched-link'>.</a>
-                            </Card>
-
+                        <Col className='card-1'> 
+                                <a href="/project1" className='stretched-link'> </a>
                         </Col>
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo2} />
-                                <a href="/project2" className='stretched-link'>.</a>
-                            </Card>
+                        <Col  className='card-1 card-2'>
+                            
+                                <a href="/project2" className='stretched-link'> </a>
                         </Col>
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo3} />
-                                <a href="/project3" className='stretched-link'>.</a>
-                            </Card>
+                        <Col className='card-1  card-3'>
+                            
+                                <a href="/project3" className='stretched-link'> </a>
                         </Col>
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo4} />
-                                <a href="/project4" className='stretched-link'>.</a>
-                            </Card>
+                        <Col className='card-1 card-4'>
+                            
+                                <a href="/project4" className='stretched-link'> </a>
                         </Col>
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo5} />
-                                <a href="/project5" className='stretched-link'>.</a>
-                            </Card>
+                        <Col className='card-1 card-5'>
+                            
+                                <a href="/project5" className='stretched-link'> </a>
                         </Col>
-                        <Col>
-                            <Card className='project'>
-                                <Card.Img style={{ width: '100%' }} variant="top" src={logo6} />
-                                <a href="/project6" className='stretched-link'>.</a>
-                            </Card>
+                        <Col className='card-1 card-6'>
+                            
+                                <a href="/project6" className='stretched-link'> </a>
                         </Col>
 
                     </Row>
