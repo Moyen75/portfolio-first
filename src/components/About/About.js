@@ -3,16 +3,17 @@ import { Card, Col, Container, Nav, NavLink, ProgressBar, Row } from 'react-boot
 import '../Header/Header.css'
 import profile from '../../images/profile.png'
 import pdf from '../../upload/MoyenulIslam.pdf'
+import img from '../../images/profile.png';
+import news from '../../New folder/Moyenul Islam.pdf'
 
 const About = () => {
     return (
         <div className='about-skill'>
             <Container className='main-about'>
                 <div className='about'>
-                    <h1>ABOUT ME</h1>
-                    <hr style={{ width: '50%', margin: '0 auto', paddingBottom: '4px', color: '#14ABF4' }} />
+                    <h1 className='title'>ABOUT ME</h1>
                     <p>
-                        My name is <span> Moyenul Islam</span>. I am a dedicated web developer , Strong creative and analytical skills.Motivated designer and developer with experience creating custom websites.Strong collaboration skills and proven history of application development.</p>
+                        My name is <span className='name'> Moyenul Islam</span>. I am a dedicated web developer , Strong creative and analytical skills.Motivated designer and developer with experience creating custom websites.Strong collaboration skills and proven history of application development.</p>
                 </div>
                 <Row xs={1} md={2} className="g-4">
 
@@ -24,38 +25,17 @@ const About = () => {
                     <Col>
 
                         <Card.Body>
-                            <h1>Skills</h1>
-                            <div>
-                                <h3 className='text-start'>HTML</h3>
-                                <ProgressBar now={90} label={"90%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>CSS</h3>
-                                <ProgressBar now={80} label={"80%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>Javascript</h3>
-                                <ProgressBar now={75} label={"75%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>React</h3>
-                                <ProgressBar now={85} label={"85%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>Node.js</h3>
-                                <ProgressBar now={60} label={"60%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>Mongodb</h3>
-                                <ProgressBar now={70} label={"70%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>Bootstrap</h3>
-                                <ProgressBar now={75} label={"75%"} />
-                            </div>
-                            <div>
-                                <h3 className='text-start'>Material UI</h3>
-                                <ProgressBar now={80} label={"80%"} />
+                            <h1 className='name'>My some skills</h1>
+
+                            <div className='skills'>
+                                <span className='text-start'>HTML</span>
+                                <span className='text-start'>CSS</span>
+                                <span className='text-start'>Javascript</span>
+                                <span className='text-start'>React</span>
+                                <span className='text-start'>Node.js</span>
+                                <span className='text-start'>Mongodb</span>
+                                <span className='text-start'>Bootstrap</span>
+                                <span className='text-start'>Material UI</span>
                             </div>
                             <div>
                                 <h4 className='text-start mt-1'>Social</h4>
@@ -65,7 +45,7 @@ const About = () => {
                                     <a className='p-2 text-dark' href="https://www.linkedin.com/in/moyen-islam-675204211/" target='blank'><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
-                            <button className='button-resume'><a style={{ textDecoration: 'none' }} href={pdf} download>DOWNLOAD MY RESUME</a></button>
+                            <button className='button-resume'><a style={{ textDecoration: 'none' }} href='https://drive.google.com/file/d/1HhNpzuYc48_6H7q1eB9gRHDktPrrgMnB/view?usp=sharing' target='blank' download>DOWNLOAD MY RESUME</a></button>
                         </Card.Body>
 
                     </Col>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css'
 import pdf from '../../upload/MoyenulIslam.pdf'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -13,16 +14,16 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav " className='justify-content-end'>
                         <div>
                             <Nav className="me-auto">
-                                <Nav.Link style={{ color: 'white' }} href="/home">HOME </Nav.Link>
-                                <Nav.Link style={{ color: 'white' }} href="/about">ABOUT US</Nav.Link>
-                                <Nav.Link style={{ color: 'white' }} href="/services">SERVICES</Nav.Link>
-                                <Nav.Link style={{ color: 'white' }} href="/projects">PROJECTS </Nav.Link>
-                                <Nav.Link style={{ color: 'white' }} href="/testimonials">TESTIMONIALS</Nav.Link>
-                                <Nav.Link style={{ color: 'white' }} href="/contact">CONTACT </Nav.Link>
+                                <Link to="/home">HOME </Link>
+                                <Link to="/about">ABOUT US</Link>
+                                <Link to="/services">SERVICES</Link>
+                                <Link to="/projects">PROJECTS </Link>
+                                <Link to="/testimonials">TESTIMONIALS</Link>
+                                <Link to="/contact">CONTACT </Link>
                             </Nav>
                         </div>
                         <Nav>
-                            <a href={pdf} download>RESUME</a>
+                            <a href='https://drive.google.com/file/d/1HhNpzuYc48_6H7q1eB9gRHDktPrrgMnB/view?usp=sharing' target='blank' download>RESUME</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

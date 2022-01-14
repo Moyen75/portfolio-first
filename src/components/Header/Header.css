@@ -1,19 +1,18 @@
 .nav{
     background-color: #14ABF4;
-    color: white;
     position: fixed;
     top: 0;
     width: 100%;
 }
 .nav a{
-    
+    display: inline-block;
     margin-left: 10px;
     position: relative;
     color: white;
     text-decoration: none;
 }
 .nav a:hover{
-        color: white;
+        color: rgb(255, 213, 74);
 }
 .nav a::before {
     content: "";
@@ -23,7 +22,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 213, 74);
     transform: scaleX(0);
     transition: transform 1s ease;
   }
@@ -121,24 +120,58 @@
   }
   .about-image{
       border-radius: 50%;
+      max-width: 250px;
+      max-height: 250px;
       background-color: #14ABF4;
       margin-top: 10%;
+  }
+  .skills{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .skills span{
+      background-color: tomato;
+      color: white;
+      margin: 5px;
+      font-size: 25px;
+      padding: 5px;
+      border-radius: 5px;
+      transition: all .8s;
+  }
+  .skills span:hover{
+    background-color: white;
+    color: tomato;
+    cursor: move;
   }
   .projects{
     background-color: rgba(238, 235, 235, 0.733);
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .service-cont{
-      background-color: white;
+  
+  .service{
+      background-color: gray;
+      min-height: 250px;
       padding-top: 10px;
+      color: white;
+      transition: all .8s;
   }
-  .services .icon{
-      font-size: 30px;
-      border: 2px solid #14ABF4;
+  .service:hover{
       color: #14ABF4;
+      background-color: white;
+  }
+  .service:hover .service-icon{
+    background-color: #14ABF4;
+    color: white;
+  }
+  .service-icon{
+      background-color: white;
+      color: #14ABF4;
+      border: 1px solid #14ABF4;
       border-radius: 50%;
-      padding: 20px;
+      padding: 30px;
+      font-size: 50px;
+      transition: all .8s;
   }
   .projects{
       margin-top: 70px;
@@ -206,5 +239,63 @@
 .member:hover{
       transform: scale(0.8);
 }
-
+.name{
+    animation: name 5s  infinite;
+}
+.title{
+    position: relative;
+    display: inline-block;
+    animation: identifier 7s  infinite;
+}
+@keyframes name {
+   0%{
+        color: rgb(131, 52, 38);
+    }
+    50%{
+        color: #196588;
+    }
+    75%{
+        color: #458616 ;
+    }
+    100%{
+        color: #881780 ;
+    }
+}
+@keyframes identifier {
+   0%{
+        color: tomato;
+    }
+    50%{
+        color: #05ABF5;
+    }
+    75%{
+        color: #68F505 ;
+    }
+    100%{
+        color: #F505E6 ;
+    }
+}
+.title::after{
+    position: absolute;
+    content: '';
+    background-color: #F505E6;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.title::before{
+    position: absolute;
+    content: '';
+    background-color: tomato;
+    height: 5px;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    width: 50%;
+    z-index: 999;
+    margin: 0 auto;
+    border-radius: 5px;
+}
 

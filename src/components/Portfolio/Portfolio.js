@@ -16,8 +16,7 @@ const Portfolio = () => {
             <Container className='service-cont'>
                 <div>
                     <div className='my-projects'>
-                        <h1>MY PROJECTS</h1>
-                        <hr style={{ width: '50%', margin: '0 auto' }} />
+                        <h1 className='title'>MY PROJECTS</h1>
                     </div>
                     <Row xs={1} md={3} className="g-4">
                         <Col className='card-1'> 

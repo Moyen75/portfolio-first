@@ -10,8 +10,7 @@ const Contact = () => {
             <Header></Header>
             <Container className='mt-5'>
                 <div>
-                    <h1>Contact Me</h1>
-                    <hr style={{ width: '30%', margin: '0 auto' }} />
+                    <h1 className='title'>Contact Me</h1>
                     <div className='mt-4'>
                         <Row xs={1} md={3} className='g-4'>
                             <Col>
