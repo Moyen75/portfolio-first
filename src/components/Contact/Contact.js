@@ -6,34 +6,9 @@ import gmail from '../../images/gmail.png'
 
 const Contact = () => {
     return (
-        <div className='mt-5'>
+        <div className='my-5'>
             <h1 className='title'>Contact Me</h1>
             <Container className='mt-5'>
-                <div className='contact-me'>
-                    {/* <div className='mt-4'>
-                        <Row xs={1} md={3} className='g-4'>
-                            <Col>
-                                <Card className='card'>
-                                    <span><i class="fas fa-map-marker-alt icon"></i></span>
-                                    <p>Abudia,Dhanghara,Raiganj,Sirajganj</p>
-                                </Card>
-                            </Col>
-                            <Col>
-                                <Card>
-                                    <span><i class="fas fa-phone icon"></i></span>
-                                    <p>+8801308989743</p>
-                                </Card>
-                            </Col>
-                            <Col>
-                                <Card>
-                                    <span><i class="fas fa-envelope icon"></i></span>
-                                    <p>moyenislam75@gmail.com</p>
-                                    <p>moyenulislam333@gmail.com</p>
-                                </Card>
-                            </Col>
-                        </Row>
-                    </div> */}
-                </div>
                 <div className='contact-me'>
                     <div>
                         <div className='d-flex align-items-left ms-2'>
