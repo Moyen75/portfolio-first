@@ -140,7 +140,6 @@
   .skills span:hover{
     background-color: white;
     color: tomato;
-    cursor: move;
   }
   .projects{
     background-color: rgba(238, 235, 235, 0.733);

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import AnimatedCursor from "react-animated-cursor"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Project1 from './components/Projects/Project1/Project1';
@@ -20,6 +21,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <AnimatedCursor
+          innerSize={28}
+          outerSize={28}
+          color='238, 61, 9'
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+        />
         <Routes>
           <Route exact path='/' element={
             <Home></Home>}
